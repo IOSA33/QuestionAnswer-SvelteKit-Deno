@@ -77,15 +77,6 @@ app.delete("/api/courses/:id/questions/:qId", async (c) => {
 });
 
 
-
-
-
-
-
-
-// new code step 10
-
-
 app.get("/api/courses/:id/questions/:qId", async (c) => {
   const qId = Number(c.req.param("qId"));
   const question = await questionRepository.readOneQuestion(qId);
@@ -135,16 +126,6 @@ app.post("/api/courses/:id/questions/:qId/answers/:aId/upvote", async (c) => {
 
   return c.json(result[0]);
 });
-
-
-// new code step 10
-
-
-
-
-
-
-
 
 
 app.post("/api/auth/register", async (c) => {
@@ -231,13 +212,13 @@ app.post("/api/auth/verify", async (c) => {
   }
 });
 
+
 const userMiddleware = async (c, next) => {
   const token = getCookie(c, COOKIE_KEY);
   const { payload } = jwt.decode(token, JWT_SECRET);
   c.user = payload;
   await next();
 };
-
 
 
 app.use(
@@ -248,12 +229,15 @@ app.use(
   }),
 );
 
+
 app.use("/api/notes", userMiddleware);
+
 
 app.get("/api/notes", async (c) => {
   const notes = await sql`SELECT * FROM notes WHERE user_id = ${c.user.id}`;
   return c.json(notes);
 });
+
 
 app.post("/api/notes", async (c) => {
   const { text } = await c.req.json();
@@ -262,6 +246,7 @@ app.post("/api/notes", async (c) => {
   return c.json(result[0]);
 });
 
+
 app.use(
   "/api/notes/*",
   jwt.jwt({
@@ -269,6 +254,7 @@ app.use(
     secret: JWT_SECRET,
   }),
 );
+
 
 app.use("/api/notes/*", userMiddleware);
 

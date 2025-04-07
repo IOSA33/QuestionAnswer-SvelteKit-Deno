@@ -7,7 +7,7 @@ const COOKIE_KEY = "token";
 export const handle = async ({ event, resolve }) => {
   const authCookie = event.cookies.get(COOKIE_KEY);
   if (authCookie) {
-    /*const response = await fetch(`${PUBLIC_INTERNAL_API_URL}/api/auth/verify`, {
+      const response = await fetch(`${PUBLIC_INTERNAL_API_URL}/api/auth/verify`, {
       method: "POST",
       headers: {
         "cookie": `${COOKIE_KEY}=${authCookie}`,
@@ -33,7 +33,6 @@ export const handle = async ({ event, resolve }) => {
 
     const cookieValue = cookie.split("=")[1].split(";")[0];
     event.cookies.set(COOKIE_KEY, cookieValue, { path: "/", secure: false });
-    */
 
     try {
       const payload = decodeJwt(authCookie);

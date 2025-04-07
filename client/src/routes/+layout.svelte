@@ -26,6 +26,9 @@
     <nav class="ml-4">
       <ul class="flex space-x-4">
         <li><a class="anchor" href={`http://localhost:5173`}>Home</a></li>
+        <li><a class="anchor" href={`http://localhost:5173/auth/register`}> Registration </a></li>
+        <li><a class="anchor" href={`http://localhost:5173/auth/login`}> Login </a></li>
+        <li><a class="anchor" href={`http://localhost:5173/notes`}> Notes </a></li>
       </ul>
     </nav>
   </header>

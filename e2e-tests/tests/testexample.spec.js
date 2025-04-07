@@ -1,4 +1,4 @@
-/*import { expect, test } from "@playwright/test";
+import { expect, test } from "@playwright/test";
 
 test.beforeEach(async ({ page }) => {
   await page.goto("https://www.aalto.fi/en");
@@ -28,4 +28,3 @@ test("Clicking Contact us to Aalto and verifying page title", async ({ page }) =
     await page.getByRole("link", { name: "Contact us" }).click();
     expect(await page.title()).toBe("Aalto University contact information | Aalto University");
 });
-*/

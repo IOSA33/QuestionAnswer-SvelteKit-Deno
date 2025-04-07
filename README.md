@@ -35,3 +35,4 @@ The project allows users to register, log in, post questions, and answer existin
 - **Testing:**  
   - End-to-end tests using **Playwright**  
   - API route testing with various user flows (register/login/post/etc.)
+# QuestionAnswer-SvelteKit-Deno

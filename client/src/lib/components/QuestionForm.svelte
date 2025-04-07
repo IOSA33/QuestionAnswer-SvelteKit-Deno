@@ -1,6 +1,7 @@
 <script>
     import { useQuestionState } from "$lib/states/questionState.svelte.js";
-    let questionState = useQuestionState();
+    let { courseId } = $props();
+    let questionState = useQuestionState(courseId);
   
     const addQuestion = async (e) => {
         const question = {
@@ -16,12 +17,12 @@
     };
   </script>
   
-<form onsubmit={addQuestion}>
-    <label for="title"> Title of a question: </label>
-    <input id="title" name="title" type="text" placeholder="Enter a title" required />
+<form class="space-y-4" onsubmit={addQuestion}>
+    <label class="block font-medium" for="title"> Title of a question: </label>
+    <input class="w-full p-2 border border-gray-300 rounded" id="title" name="title" type="text" placeholder="Enter a title" required />
 <br>
-    <label for="text">Question:</label>
-    <textarea id="text" name="text" placeholder="Enter your question" required></textarea>
+    <label class="block font-medium" for="text">Question:</label>
+    <textarea class="w-full p-2 border border-gray-300 rounded" id="text" name="text" placeholder="Enter your question" required></textarea>
 
-    <input type="submit" value="Submit question" />
+    <input class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 cursor-pointer" type="submit" value="Submit question" />
 </form>

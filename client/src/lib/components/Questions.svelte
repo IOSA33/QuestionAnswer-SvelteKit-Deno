@@ -1,14 +1,19 @@
 <script>
-    import QuestionForm from "./QuestionForm.svelte";
-    import QuestionList from "./QuestionList.svelte";
-  </script>
-  
-<h1>Project svelte</h1>
+  import QuestionForm from "$lib/components/QuestionForm.svelte";
+  import QuestionList from "$lib/components/QuestionList.svelte";
 
-<h2>Questions?</h2>
+  let { data } = $props();
+  const { course, questions } = data;
+</script>
 
-<QuestionForm />
+<h1 class="text-2xl">Course Name: {data.course?.name}</h1>
 
-<h2>Existing questions</h2>
+<h1 class="text-xl">Course ID: {data.course?.id}</h1>
 
-<QuestionList />
+<h2 class="text-2xl mt-4">Questions?</h2>
+
+<QuestionForm courseId={course.id} />
+
+<h2 class="text-xl mt-4">Existing questions</h2>
+
+<QuestionList {questions} courseId={course.id} />

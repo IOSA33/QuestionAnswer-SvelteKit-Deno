@@ -26,54 +26,52 @@
  * ```
  */
 declare module '$env/static/private' {
-	export const WINDIR: string;
-	export const JAVA_HOME: string;
-	export const ONEDRIVE: string;
-	export const APPDATA: string;
-	export const OS: string;
-	export const COMSPEC: string;
-	export const SYSTEMROOT: string;
-	export const COMPUTERNAME: string;
+	export const ENABLELOG: string;
+	export const PROGRAMFILES: string;
+	export const PWD: string;
+	export const TEMP: string;
+	export const USERDOMAIN_ROAMINGPROFILE: string;
+	export const ACSVCPORT: string;
 	export const PROCESSOR_REVISION: string;
-	export const LOGONSERVER: string;
-	export const DRIVERDATA: string;
-	export const PSMODULEPATH: string;
+	export const INIT_CWD: string;
+	export const PROCESSOR_IDENTIFIER: string;
+	export const PUBLIC: string;
+	export const OS: string;
+	export const LOCALAPPDATA: string;
+	export const PROMPT: string;
 	export const PROCESSOR_ARCHITECTURE: string;
+	export const RLSSVCPORT: string;
+	export const USERPROFILE: string;
+	export const ONEDRIVE: string;
+	export const PATH: string;
 	export const CHOCOLATEYLASTPATHUPDATE: string;
 	export const COMMONPROGRAMFILES: string;
-	export const PROGRAMDATA: string;
-	export const PROGRAMFILES: string;
-	export const RLSSVCPORT: string;
-	export const NPM_CONFIG_USER_AGENT: string;
-	export const HOMEDRIVE: string;
-	export const USERDOMAIN_ROAMINGPROFILE: string;
-	export const USERNAME: string;
-	export const PROGRAMW6432: string;
-	export const ALLUSERSPROFILE: string;
-	export const PWD: string;
+	export const COMPUTERNAME: string;
 	export const NUMBER_OF_PROCESSORS: string;
-	export const PROCESSOR_IDENTIFIER: string;
-	export const NODE_ENV: string;
-	export const PATHEXT: string;
+	export const PROGRAMDATA: string;
+	export const SYSTEMROOT: string;
 	export const COMMONPROGRAMW6432: string;
-	export const ACSETUPSVCPORT: string;
-	export const ENABLELOG: string;
-	export const INIT_CWD: string;
-	export const HOMEPATH: string;
-	export const PROMPT: string;
-	export const TMP: string;
-	export const PROCESSOR_LEVEL: string;
-	export const SESSIONNAME: string;
-	export const TEMP: string;
-	export const USERPROFILE: string;
-	export const ACSVCPORT: string;
-	export const USERDOMAIN: string;
-	export const SYSTEMDRIVE: string;
+	export const ALLUSERSPROFILE: string;
+	export const NODE_ENV: string;
+	export const NPM_CONFIG_USER_AGENT: string;
+	export const JAVA_HOME: string;
 	export const CHOCOLATEYINSTALL: string;
-	export const PUBLIC: string;
-	export const EFC_5604: string;
-	export const LOCALAPPDATA: string;
-	export const PATH: string;
+	export const ACSETUPSVCPORT: string;
+	export const DRIVERDATA: string;
+	export const PROGRAMW6432: string;
+	export const PSMODULEPATH: string;
+	export const APPDATA: string;
+	export const USERNAME: string;
+	export const HOMEPATH: string;
+	export const HOMEDRIVE: string;
+	export const PROCESSOR_LEVEL: string;
+	export const WINDIR: string;
+	export const LOGONSERVER: string;
+	export const PATHEXT: string;
+	export const SYSTEMDRIVE: string;
+	export const USERDOMAIN: string;
+	export const COMSPEC: string;
+	export const TMP: string;
 }
 
 /**
@@ -86,7 +84,8 @@ declare module '$env/static/private' {
  * ```
  */
 declare module '$env/static/public' {
-	
+	export const PUBLIC_API_URL: string;
+	export const PUBLIC_INTERNAL_API_URL: string;
 }
 
 /**
@@ -105,54 +104,52 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
-		WINDIR: string;
-		JAVA_HOME: string;
-		ONEDRIVE: string;
-		APPDATA: string;
-		OS: string;
-		COMSPEC: string;
-		SYSTEMROOT: string;
-		COMPUTERNAME: string;
+		ENABLELOG: string;
+		PROGRAMFILES: string;
+		PWD: string;
+		TEMP: string;
+		USERDOMAIN_ROAMINGPROFILE: string;
+		ACSVCPORT: string;
 		PROCESSOR_REVISION: string;
-		LOGONSERVER: string;
-		DRIVERDATA: string;
-		PSMODULEPATH: string;
+		INIT_CWD: string;
+		PROCESSOR_IDENTIFIER: string;
+		PUBLIC: string;
+		OS: string;
+		LOCALAPPDATA: string;
+		PROMPT: string;
 		PROCESSOR_ARCHITECTURE: string;
+		RLSSVCPORT: string;
+		USERPROFILE: string;
+		ONEDRIVE: string;
+		PATH: string;
 		CHOCOLATEYLASTPATHUPDATE: string;
 		COMMONPROGRAMFILES: string;
-		PROGRAMDATA: string;
-		PROGRAMFILES: string;
-		RLSSVCPORT: string;
-		NPM_CONFIG_USER_AGENT: string;
-		HOMEDRIVE: string;
-		USERDOMAIN_ROAMINGPROFILE: string;
-		USERNAME: string;
-		PROGRAMW6432: string;
-		ALLUSERSPROFILE: string;
-		PWD: string;
+		COMPUTERNAME: string;
 		NUMBER_OF_PROCESSORS: string;
-		PROCESSOR_IDENTIFIER: string;
-		NODE_ENV: string;
-		PATHEXT: string;
+		PROGRAMDATA: string;
+		SYSTEMROOT: string;
 		COMMONPROGRAMW6432: string;
-		ACSETUPSVCPORT: string;
-		ENABLELOG: string;
-		INIT_CWD: string;
-		HOMEPATH: string;
-		PROMPT: string;
-		TMP: string;
-		PROCESSOR_LEVEL: string;
-		SESSIONNAME: string;
-		TEMP: string;
-		USERPROFILE: string;
-		ACSVCPORT: string;
-		USERDOMAIN: string;
-		SYSTEMDRIVE: string;
+		ALLUSERSPROFILE: string;
+		NODE_ENV: string;
+		NPM_CONFIG_USER_AGENT: string;
+		JAVA_HOME: string;
 		CHOCOLATEYINSTALL: string;
-		PUBLIC: string;
-		EFC_5604: string;
-		LOCALAPPDATA: string;
-		PATH: string;
+		ACSETUPSVCPORT: string;
+		DRIVERDATA: string;
+		PROGRAMW6432: string;
+		PSMODULEPATH: string;
+		APPDATA: string;
+		USERNAME: string;
+		HOMEPATH: string;
+		HOMEDRIVE: string;
+		PROCESSOR_LEVEL: string;
+		WINDIR: string;
+		LOGONSERVER: string;
+		PATHEXT: string;
+		SYSTEMDRIVE: string;
+		USERDOMAIN: string;
+		COMSPEC: string;
+		TMP: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;
 	}
@@ -172,6 +169,8 @@ declare module '$env/dynamic/private' {
  */
 declare module '$env/dynamic/public' {
 	export const env: {
+		PUBLIC_API_URL: string;
+		PUBLIC_INTERNAL_API_URL: string;
 		[key: `PUBLIC_${string}`]: string | undefined;
 	}
 }

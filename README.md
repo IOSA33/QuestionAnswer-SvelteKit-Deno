@@ -1,5 +1,5 @@
-# CopyReddit-SvelteKit-Deno
-## Full Stack Reddit Clone (SvelteKit + Deno + PostgreSQL)
+# QuestionAnswer-SvelteKit-Deno
+## Full Stack "Reddit" Clone (SvelteKit + Deno + PostgreSQL)
 
 This is a full stack web application inspired by Reddit, built using **SvelteKit** for the front end and **Deno** (with the Hono framework) for the back end. The application uses **PostgreSQL** as the primary database and is designed with modular architecture and strong security practices in mind.
 
@@ -35,5 +35,4 @@ The project allows users to register, log in, post questions, and answer existin
 - **Testing:**  
   - End-to-end tests using **Playwright**  
   - API route testing with various user flows (register/login/post/etc.)
-# QuestionAnswer-SvelteKit-Deno
-# QuestionAnswer-SvelteKit-Deno
+
